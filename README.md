@@ -1,155 +1,114 @@
-
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BLACK HAT | AnonProfile</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"/>
-  <script src="https://kit.fontawesome.com/a2d9d6a09b.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLACK HAT</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background-color: #0d0d0d;
-      color: #ffffff;
-      font-family: 'Orbitron', sans-serif;
-      text-align: center;
-    }
-
-    h1 {
-      color: cyan;
-      font-size: 2em;
-      margin-top: 20px;
-    }
-
-    .header {
-      margin: 20px auto;
-      padding: 10px 20px;
       background-color: #111;
-      border-radius: 10px;
-      display: inline-block;
-      color: cyan;
-      font-weight: bold;
-      font-size: 1.4em;
-    }
-
-    hr {
-      border: 0.5px solid #444;
-      margin: 20px auto;
-      width: 80%;
-    }
-
-    .subtitle {
-      font-size: 1em;
-      color: #aaa;
-    }
-
-    .section-title {
-      color: cyan;
-      font-size: 1.3em;
-      margin-top: 30px;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-      max-width: 95vw;
-      margin: 20px auto;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       padding: 0 10px;
     }
 
-    .skill-card {
-      background-color: #1a1a1a;
+    .container {
+      max-width: 480px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    h1, h2 {
+      color: cyan;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      color: #aaa;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #222;
       padding: 15px;
       border-radius: 12px;
-      box-shadow: 0 2px 5px rgba(0, 255, 255, 0.2);
-      transition: transform 0.3s, background 0.3s;
+      text-align: center;
+      transition: transform 0.2s ease;
     }
 
-    .skill-card:hover {
-      background-color: #0e0e0e;
-      transform: scale(1.05);
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: #0a0a0a;
     }
 
-    .skill-icon {
-      font-size: 1.8em;
+    .card i {
+      font-size: 28px;
       color: cyan;
       margin-bottom: 8px;
     }
 
-    .skill-title {
-      font-size: 1em;
-      font-weight: bold;
-      margin-bottom: 5px;
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
     }
 
-    .skill-desc {
-      font-size: 0.85em;
-      color: #ccc;
+    .card p {
+      font-size: 13px;
+      color: #bbb;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: cyan;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>BLACK HAT</h1>
+    <p>Cyber Security Enthusiast</p>
 
-  <div class="header">anonprofile</div>
-  <hr>
-  <h1>BLACK HAT</h1>
-  <p class="subtitle">Cyber Security Enthusiast</p>
-  <hr>
-
-  <h2 class="section-title">Skils</h2>
-  <div class="skills-grid">
-
-    <div class="skill-card">
-      <div class="skill-icon"><i class="fas fa-bug"></i></div>
-      <div class="skill-title">Exploitation</div>
-      <div class="skill-desc">Mengeksploitasi celah keamanan di sistem dan aplikasi.</div>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <i class="fas fa-bug"></i>
+        <h3>Exploitation</h3>
+        <p>Mengeksploitasi celah keamanan di sistem dan aplikasi.</p>
+      </div>
+      <div class="card">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+        <p>Membuat tools otomatisasi dan exploitasi.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-search"></i>
+        <h3>OSINT</h3>
+        <p>Mengumpulkan data dari sumber terbuka.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-terminal"></i>
+        <h3>Linux</h3>
+        <p>Menguasai command line dan sistem Linux.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-user-secret"></i>
+        <h3>Social Engineering</h3>
+        <p>Manipulasi psikologis untuk akses informasi.</p>
+      </div>
     </div>
-
-    <div class="skill-card">
-      <div class="skill-icon"><i class="fab fa-python"></i></div>
-      <div class="skill-title">Python</div>
-      <div class="skill-desc">Membuat tools otomatisasi dan exploitasi.</div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon"><i class="fas fa-search"></i></div>
-      <div class="skill-title">OSINT</div>
-      <div class="skill-desc">Open-source intelligence untuk investigasi digital.</div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-      <div class="skill-title">Linux</div>
-      <div class="skill-desc">Penguasaan terminal Linux untuk administrasi & hacking.</div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon"><i class="fas fa-user-secret"></i></div>
-      <div class="skill-title">Social Engineering</div>
-      <div class="skill-desc">Manipulasi psikologis untuk mengakses sistem.</div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon"><i class="fas fa-code"></i></div>
-      <div class="skill-title">Scripting</div>
-      <div class="skill-desc">Membuat script otomatisasi dengan Bash dan Python.</div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
-      <div class="skill-title">Network</div>
-      <div class="skill-desc">Analisa dan eksploitasi jaringan.</div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
-      <div class="skill-title">Penetration Testing</div>
-      <div class="skill-desc">Simulasi serangan terhadap sistem untuk uji keamanan.</div>
-    </div>
-
   </div>
-
 </body>
 </html>
