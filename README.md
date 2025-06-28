@@ -101,7 +101,7 @@
     <p class="sub">Cyber Security Enthusiast</p>
 
     <h2>Skills</h2>
-    <div class="skill">
+    <div class="skills">
       <div class="skill" onclick="toggleDesc(this)">
         <i class="fas fa-bug"></i>Exploitation
         <div class="desc">Mengeksploitasi celah keamanan di sistem dan aplikasi.</div>
