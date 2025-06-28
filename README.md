@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -34,7 +34,7 @@
       margin-top: 30px;
       margin-bottom: 10px;
     }
-    .skills {
+    .skils {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
