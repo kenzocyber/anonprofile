@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -34,7 +34,7 @@
       margin-top: 30px;
       margin-bottom: 10px;
     }
-    .skils {
+    .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -101,7 +101,7 @@
     <p class="sub">Cyber Security Enthusiast</p>
 
     <h2>Skills</h2>
-    <div class="skills">
+    <div class="skill">
       <div class="skill" onclick="toggleDesc(this)">
         <i class="fas fa-bug"></i>Exploitation
         <div class="desc">Mengeksploitasi celah keamanan di sistem dan aplikasi.</div>
